@@ -56,22 +56,23 @@
     
 })(jQuery);
 
+ // inicio paginação Nagano
 
 document.addEventListener('DOMContentLoaded', function() {
-    var page1 = document.getElementById('page-1');
-    var page2 = document.getElementById('page-2');
-    var isTransitioning = false; // Variável de controle para evitar cliques repetidos durante a transição
 
+    var page1 = document.getElementById('pageNagano-1');
+    var page2 = document.getElementById('pageNagano-2');
+    var isTransitioning = false; // Variável de controle para evitar cliques repetidos durante a transição
 
     function showPage(page) {
         if (isTransitioning) return; // Se já estiver em transição, não executar novamente
         isTransitioning = true; // Definir a variável como true para indicar que uma transição está ocorrendo
 
-        page1.style.display = page === 'page-1' ? 'block' : 'none';
-        page2.style.display = page === 'page-2' ? 'block' : 'none';
+        page1.style.display = page === 'pageNagano-1' ? 'block' : 'none';
+        page2.style.display = page === 'pageNagano-2' ? 'block' : 'none';
 
         // Rolagem suave para a página exibida após um atraso de 500ms
-        var targetPage = page === 'pageGifu-1' ? page1 : page2;
+        var targetPage = page === 'pageNagano-1' ? page1 : page2;
         setTimeout(function() {
             targetPage.scrollIntoView({ behavior: 'smooth' });
             isTransitioning = false; // Definir a variável como false após a conclusão da transição
@@ -83,20 +84,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
         pageLinks.forEach(function(pageLink) {
             pageLink.classList.remove('active');
+            pageLink.style.backgroundColor = "#b3b3b3"; // gray page link
         });
 
         link.classList.add('active');
+        link.style.backgroundColor = "#0073b4"; // blue page link
     }
 
     function handlePageClick(e) {
         e.preventDefault();
         var target = this.getAttribute('href');
 
-        if (target === '#page-1') {
-            showPage('page-1');
+
+        if (target === '#pageNagano-1') {
+            showPage('pageNagano-1');
             setActiveLink(this);
-        } else if (target === '#page-2') {
-            showPage('page-2');
+        } else if (target === '#pageNagano-2') {
+            showPage('pageNagano-2');
             setActiveLink(this);
         }
     }
@@ -108,20 +112,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Verificar a página atual ao carregar a página
     var currentHash = window.location.hash;
-    if (currentHash === '#page-1' || currentHash === '') {
-        showPage('page-1');
+    if (currentHash === '#pageNagano-1' || currentHash === '') {
+        showPage('pageNagano-1');
         setActiveLink(pageLinks[0]);
-    } else if (currentHash === '#page-2') {
-        showPage('page-2');
+    } else if (currentHash === '#pageNagano-2') {
+        showPage('pageNagano-2');
         setActiveLink(pageLinks[1]);
     }
+
 });
+
+
+// fim paginação Nagano
+
+
+
+// inicio paginação Gifu
 
 document.addEventListener('DOMContentLoaded', function() {
     var page1 = document.getElementById('pageGifu-1');
     var page2 = document.getElementById('pageGifu-2');
     var isTransitioning = false; // Variável de controle para evitar cliques repetidos durante a transição
-
 
     function showPage(page) {
         if (isTransitioning) return; // Se já estiver em transição, não executar novamente
@@ -143,9 +154,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         pageLinks.forEach(function(pageLink) {
             pageLink.classList.remove('active');
+            pageLink.style.backgroundColor = "#b3b3b3"; // Set all page links to gray
         });
 
         link.classList.add('active');
+        link.style.backgroundColor = "#0073b4"; // Set the active page link to blue
     }
 
     function handlePageClick(e) {
@@ -176,3 +189,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setActiveLink(pageLinks[1]);
     }
 });
+
+// fim paginação Gifu
+
