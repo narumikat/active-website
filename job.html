@@ -1,554 +1,743 @@
 <!DOCTYPE html>
 <html lang="pt">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Active Corp</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Active corp - empregos no Japão" name="Active empregos no japão, active corp, active empregos">
-    <meta content="Active corp - empregos no Japão" name="Active corp, encontre emprego em todo o Japão">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Active corp - empregos no Japão"
+      name="Active empregos no japão, active corp, active empregos"
+    />
+    <meta
+      content="Active corp - empregos no Japão"
+      name="Active corp, encontre emprego em todo o Japão"
+    />
 
     <!-- Favicon -->
-    <link href="img/favicon.png" rel="icon">
-    <script src="https://kit.fontawesome.com/d22238655e.js" crossorigin="anonymous"></script>
+    <link href="img/favicon.png" rel="icon" />
+    <script
+      src="https://kit.fontawesome.com/d22238655e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "658954606219772");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=658954606219772&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
 
-<body>
-    <!-- Header Start -->    <div class="container-fluid bg-dark px-0">
-        <div class="row gx-0">
-            <div class="col-lg-3 bg-dark d-none d-lg-block">
-                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <img class="img-top" src="img/active-logo.png">
-                    <h1 class="m-0 display-4 text-primary text-uppercase">Active corp</h1>
-                </a>
-
-            </div>
-
-            <div class="col-lg-9">
-                <div class="row gx-0 bg-secondary d-none d-lg-flex">
-                    <div class="col-lg-7 px-5 text-start">
-                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
-                            <i class="fa fa-envelope text-primary me-2"></i>
-                            <h6 class="mb-0">sugio@active-ing.jp</h6>
-                        </div>
-                        <div class="h-100 d-inline-flex align-items-center py-2">
-                            <i class="fa fa-phone-alt text-primary me-2"></i>
-                            <h6 class="mb-0">090 1604 8273</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 px-5 text-end">
-                        <div class="d-inline-flex align-items-center py-2">
-                            <a class="btn btn-light btn-square rounded-circle me-2" target="_blank" href="https://www.facebook.com/active.inc.japan">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" target="_blank" href="https://www.instagram.com/activenagano/">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 px-lg-5">
-                    <a href="index.html" class="navbar-brand d-block d-lg-none">
-                        <img class="img-top" src="img/active-logo.png">
-                        <h1 class="m-0 display-4 text-primary text-uppercase">Active corp</h1>
-                    </a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">Sobre nós</a>
-                            <a href="job.html" class="nav-item nav-link">Vagas</a>
-                            <a href="index.html#office" class="nav-item nav-link">Escritórios</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">mais</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="companyprofile.html" class="dropdown-item">Perfil da companhia</a>
-                                    <a href="privacy.html" class="dropdown-item">Política de privacidade</a>
-                                    <a href="terms.html" class="dropdown-item">Termos & Condições</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contato</a>
-                        </div>
-                        <a href="https://active.u-innova.com/ui/sign_up" target="_blank" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Ficha Online</a>
-                    </div>
-                </nav>
-            </div>
+  <body>
+    <!-- Header Start -->
+    <div class="container-fluid bg-dark px-0">
+      <div class="row gx-0">
+        <div class="col-lg-3 bg-dark d-none d-lg-block">
+          <a
+            href="index.html"
+            class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center"
+          >
+            <img class="img-top" src="img/active-logo.png" />
+            <h1 class="m-0 display-4 text-primary text-uppercase">
+              Active corp
+            </h1>
+          </a>
         </div>
+
+        <div class="col-lg-9">
+          <div class="row gx-0 bg-secondary d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+              <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                <i class="fa fa-envelope text-primary me-2"></i>
+                <h6 class="mb-0">sugio@active-ing.jp</h6>
+              </div>
+              <div class="h-100 d-inline-flex align-items-center py-2">
+                <i class="fa fa-phone-alt text-primary me-2"></i>
+                <h6 class="mb-0">090 1604 8273</h6>
+              </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+              <div class="d-inline-flex align-items-center py-2">
+                <a
+                  class="btn btn-light btn-square rounded-circle me-2"
+                  target="_blank"
+                  href="https://www.facebook.com/active.inc.japan"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  class="btn btn-light btn-square rounded-circle me-2"
+                  target="_blank"
+                  href="https://www.instagram.com/activenagano/"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <nav
+            class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 px-lg-5"
+          >
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+              <img class="img-top" src="img/active-logo.png" />
+              <h1 class="m-0 display-4 text-primary text-uppercase">
+                Active corp
+              </h1>
+            </a>
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarCollapse"
+            >
+              <div class="navbar-nav mr-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">Sobre nós</a>
+                <a href="job.html" class="nav-item nav-link">Vagas</a>
+                <a href="index.html#office" class="nav-item nav-link"
+                  >Escritórios</a
+                >
+                <div class="nav-item dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    >mais</a
+                  >
+                  <div class="dropdown-menu rounded-0 m-0">
+                    <a href="companyprofile.html" class="dropdown-item"
+                      >Perfil da companhia</a
+                    >
+                    <a href="privacy.html" class="dropdown-item"
+                      >Política de privacidade</a
+                    >
+                    <a href="terms.html" class="dropdown-item"
+                      >Termos & Condições</a
+                    >
+                  </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contato</a>
+              </div>
+              <a
+                href="https://active.u-innova.com/ui/sign_up"
+                target="_blank"
+                class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block"
+                >Ficha Online</a
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
     </div>
     <!-- Header End -->
 
-
     <!-- title vagas -->
     <div class="container-fluid bg-primary p-5 bg-hero mb-5">
-        <div class="row py-5">
-            <div class="col-12 text-center">
-                <h1 class="display-2 text-uppercase text-white mb-md-4">Vagas disponíveis</h1>
-                <a href="https://active.u-innova.com/ui/sign_up" target="_blank" class="btn btn-light py-md-3 px-md-5">Cadastre-se</a>
-            </div>
+      <div class="row py-5">
+        <div class="col-12 text-center">
+          <h1 class="display-2 text-uppercase text-white mb-md-4">
+            Vagas disponíveis
+          </h1>
+          <a
+            href="https://active.u-innova.com/ui/sign_up"
+            target="_blank"
+            class="btn btn-light py-md-3 px-md-5"
+            >Cadastre-se</a
+          >
         </div>
+      </div>
     </div>
     <!-- title vagas End -->
 
-
     <!-- menu job states -->
     <div class="container-fluid p-5">
-        <div class="tab-class text-center">
-            <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase rounded-pill mb-5">
-                <li class="nav-item">
-                    <a class="nav-link rounded-pill text-white active" data-bs-toggle="pill" href="#tab-1">Nagano ken</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-2">Gifu ken</a>
-                </li> 
-            </ul> 
-    <!-- end menu job states -->
+      <div class="tab-class text-center">
+        <ul
+          class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase rounded-pill mb-5"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link rounded-pill text-white active"
+              data-bs-toggle="pill"
+              href="#tab-1"
+              >Nagano ken</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link rounded-pill text-white"
+              data-bs-toggle="pill"
+              href="#tab-2"
+              >Gifu ken</a
+            >
+          </li>
+        </ul>
+        <!-- end menu job states -->
 
-    <!-- content menu states -->
+        <!-- content menu states -->
         <div class="tab-content">
-
-        <!-- tab 1 Nagano Ken -->
-        <div id="tab-1" class="tab-pane fade show p-0 active">
-
-        <!-- page 1 Nagano Ken -->
-        <div id="pageNagano-1" class="page-content">
-
-        <!-- job -->
-        <div class="row g-1 mb-3">
-            <div class="row border border-5 pt-10 pb-10">
-                <div class="col-md-2">
-                  <img src="img/eletronicos-ueda.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                  <div class="container">
-                    <p>Localização: Ueda-shi, Nagano-ken</p>
-                    <p>Remuneração: ¥1.200/hora</p>
-                    <p>Montagem de componentes eletronicos</p>
-                    <p>Ambiente predominante <strong>feminino</strong></p>
+          <!-- tab 1 Nagano Ken -->
+          <div id="tab-1" class="tab-pane fade show p-0 active">
+            <!-- page 1 Nagano Ken -->
+            <div id="pageNagano-1" class="page-content">
+              <!-- job -->
+              <div class="row g-1 mb-3">
+                <div class="row border border-5 pt-10 pb-10">
+                  <div class="col-md-2">
+                    <img
+                      src="img/eletronicos-ueda.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <div class="container">
+                      <p>Localização: Ueda-shi, Nagano-ken</p>
+                      <p>Remuneração: ¥1.200/hora</p>
+                      <p>Montagem de componentes eletronicos</p>
+                      <p>Ambiente predominante <strong>feminino</strong></p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Serviço leve e limpo</p>
+                      <p>Serviço estável</p>
+                      <p>Possuímos apartamento</p>
+                      <p>Auxílio na mudança</p>
+                      <p>Contratação imediata</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>
+                        Requisitos: Proficiência mínima de 40% em conversação em
+                        japonês.
+                      </p>
+                      <p>Turno fixo</p>
+                      <a
+                        href="https://active.u-innova.com/ui/sign_up?title=%230001+-+F%C3%A1brica+de+Cosm%C3%A9ticos"
+                        target="_blank"
+                        class="btn btn-primary py-md-3 px-md-5 me-3"
+                        >Garanta sua vaga agora!</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Serviço leve e limpo</p>
-                        <p>Serviço estável</p>
-                        <p>Possuímos apartamento</p>
-                        <p>Auxílio na mudança</p>
-                        <p>Contratação imediata</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Requisitos: Proficiência mínima de 40% em conversação em japonês.</p>
-                        <p>Turno fixo</p>
-                        <a href="https://active.u-innova.com/ui/sign_up?title=%230001+-+F%C3%A1brica+de+Cosm%C3%A9ticos" target="_blank" class="btn btn-primary py-md-3 px-md-5 me-3">Garanta sua vaga agora!</a>
-                    </div>
-                </div>
               </div>
+              <!-- end job -->
 
-              
-        </div>
-        <!-- end job -->
-
-        <!-- job -->
-        <div class="row g-1 mb-3">
-            <div class="row border border-5 pt-10 pb-10">
-                <div class="col-md-2">
-                  <img src="img/oper-maquin.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                  <div class="container">
-                    <p>Localização: Miyada-mura, Nagano-ken</p>
-                    <p>Remuneração: ¥1.300/hora</p>
-                    <p>Operador de máquina</p>
-                    <p>homem e mulher</p>
+              <!-- job -->
+              <div class="row g-1 mb-3">
+                <div class="row border border-5 pt-10 pb-10">
+                  <div class="col-md-2">
+                    <img src="img/oper-maquin.jpg" alt="" class="img-fluid" />
+                  </div>
+                  <div class="col-md-4">
+                    <div class="container">
+                      <p>Localização: Miyada-mura, Nagano-ken</p>
+                      <p>Remuneração: ¥1.300/hora</p>
+                      <p>Operador de máquina</p>
+                      <p>homem e mulher</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Serviço estável</p>
+                      <p>Possuímos apartamento</p>
+                      <p>Auxílio na mudança</p>
+                      <p>Auxílio transporte</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Requisitos: nihongo intermediário 60%</p>
+                      <p>Turnos disponíveis: yakin / nikoutai</p>
+                      <a
+                        href="https://active.u-innova.com/ui/sign_up?title=%230004+-+Operador+de+m%C3%A1quinas"
+                        target="_blank"
+                        class="btn btn-primary py-md-3 px-md-5 me-3"
+                        >Garanta sua vaga agora!</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Serviço estável</p>
-                        <p>Possuímos apartamento</p>
-                        <p>Auxílio na mudança</p>
-                        <p>Auxílio transporte</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Requisitos: nihongo intermediário 60%</p>
-                        <p>Turnos disponíveis: yakin / nikoutai</p>
-                        <a href="https://active.u-innova.com/ui/sign_up?title=%230004+-+Operador+de+m%C3%A1quinas" target="_blank" class="btn btn-primary py-md-3 px-md-5 me-3">Garanta sua vaga agora!</a>
-                    </div>
-                </div>
               </div>
+              <!-- end job -->
 
-              
-        </div>
-        <!-- end job -->
-
-        <!-- job -->
-        <div class="row g-1 mb-3">
-            <div class="row border border-5 pt-10 pb-10">
-                <div class="col-md-2">
-                  <img src="img/car-navi.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                  <div class="container">
-                    <p>Localização: Minowa-machi, Nagano-ken</p>
-                    <p>Remuneração: ¥1.250/hora</p>
-                    <p>Montagem de car navi</p>
-                    <p>homem e mulher</p>
+              <!-- job -->
+              <div class="row g-1 mb-3">
+                <div class="row border border-5 pt-10 pb-10">
+                  <div class="col-md-2">
+                    <img src="img/car-navi.jpg" alt="" class="img-fluid" />
+                  </div>
+                  <div class="col-md-4">
+                    <div class="container">
+                      <p>Localização: Minowa-machi, Nagano-ken</p>
+                      <p>Remuneração: ¥1.250/hora</p>
+                      <p>Montagem de car navi</p>
+                      <p>homem e mulher</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Serviço limpo</p>
+                      <p>Possuímos apartamento</p>
+                      <p>Auxílio na mudança</p>
+                      <p>Auxílio transporte</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Requisitos: nihongo intermediário</p>
+                      <p>Turnos disponíveis: Diurno e Noturno</p>
+                      <a
+                        href="https://active.u-innova.com/ui/sign_up?title=%230005+-+Montagem+de+Car+Navi"
+                        target="_blank"
+                        class="btn btn-primary py-md-3 px-md-5 me-3"
+                        >Garanta sua vaga agora!</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Serviço limpo</p>
-                        <p>Possuímos apartamento</p>
-                        <p>Auxílio na mudança</p>
-                        <p>Auxílio transporte</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Requisitos: nihongo intermediário</p>
-                        <p>Turnos disponíveis: Diurno e Noturno</p>
-                        <a href="https://active.u-innova.com/ui/sign_up?title=%230005+-+Montagem+de+Car+Navi" target="_blank" class="btn btn-primary py-md-3 px-md-5 me-3">Garanta sua vaga agora!</a>
-                    </div>
-                </div>
               </div>
+              <!-- end job -->
 
-              
-        </div>
-        <!-- end job -->
-
-        <!-- job -->
-        <div class="row g-1 mb-3">
-            <div class="row border border-5 pt-10 pb-10">
-                <div class="col-md-2">
-                  <img src="img/plastic-piece.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                  <div class="container">
-                    <p>Localização: Komagane-shi, Nagano-ken</p>
-                    <p>Remuneração: ¥1.150/hora</p>
-                    <p>Kensa de peças plásticas</p>
-                    <p>Ambiente predominante<strong>feminino</strong></p>
+              <!-- job -->
+              <div class="row g-1 mb-3">
+                <div class="row border border-5 pt-10 pb-10">
+                  <div class="col-md-2">
+                    <img src="img/plastic-piece.jpg" alt="" class="img-fluid" />
+                  </div>
+                  <div class="col-md-4">
+                    <div class="container">
+                      <p>Localização: Komagane-shi, Nagano-ken</p>
+                      <p>Remuneração: ¥1.150/hora</p>
+                      <p>Kensa de peças plásticas</p>
+                      <p>Ambiente predominante<strong>feminino</strong></p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Serviço limpo e organizado</p>
+                      <p>Possuímos apartamento</p>
+                      <p>Auxílio na mudança</p>
+                      <p>Auxílio transporte</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Requisitos: nihongo intermediário</p>
+                      <p>Turnos disponíveis: Diurno e Noturno</p>
+                      <a
+                        href="https://active.u-innova.com/ui/sign_up?title=%230006+-+Kensa+de+pe%C3%A7as+pl%C3%A1sticas+"
+                        target="_blank"
+                        class="btn btn-primary py-md-3 px-md-5 me-3"
+                        >Garanta sua vaga agora!</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Serviço limpo e organizado</p>
-                        <p>Possuímos apartamento</p>
-                        <p>Auxílio na mudança</p>
-                        <p>Auxílio transporte</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Requisitos: nihongo intermediário</p>
-                        <p>Turnos disponíveis: Diurno e Noturno</p>
-                        <a href="https://active.u-innova.com/ui/sign_up?title=%230006+-+Kensa+de+pe%C3%A7as+pl%C3%A1sticas+" target="_blank" class="btn btn-primary py-md-3 px-md-5 me-3">Garanta sua vaga agora!</a>
-                    </div>
-                </div>
               </div>
+              <!-- end job -->
 
-              
-        </div>
-        <!-- end job -->
-
-        <!-- job -->
-        <div class="row g-1 mb-3">
-            <div class="row border border-5 pt-10 pb-10">
-                <div class="col-md-2">
-                  <img src="img/kiban.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                  <div class="container">
-                    <p>Localização: Suwa-shi, Nagano-ken</p>
-                    <p>Remuneração: ¥1.200/hora</p>
-                    <p>Kensa de kiban</p>
-                    <p>Ambiente predominante<strong>feminino</strong></p>
+              <!-- job -->
+              <div class="row g-1 mb-3">
+                <div class="row border border-5 pt-10 pb-10">
+                  <div class="col-md-2">
+                    <img src="img/kiban.jpg" alt="" class="img-fluid" />
+                  </div>
+                  <div class="col-md-4">
+                    <div class="container">
+                      <p>Localização: Suwa-shi, Nagano-ken</p>
+                      <p>Remuneração: ¥1.200/hora</p>
+                      <p>Kensa de kiban</p>
+                      <p>Ambiente predominante<strong>feminino</strong></p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Serviço limpo e organizado</p>
+                      <p>Possuímos apartamento</p>
+                      <p>Auxílio na mudança</p>
+                      <p>Auxílio transporte</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Requisitos: nihongo intermediário 50%</p>
+                      <p>Turnos disponíveis: Noturno</p>
+                      <a
+                        href="https://active.u-innova.com/ui/sign_up?title=%230007+-+Kensa+de+kiban"
+                        target="_blank"
+                        class="btn btn-primary py-md-3 px-md-5 me-3"
+                        >Garanta sua vaga agora!</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Serviço limpo e organizado</p>
-                        <p>Possuímos apartamento</p>
-                        <p>Auxílio na mudança</p>
-                        <p>Auxílio transporte</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Requisitos: nihongo intermediário 50%</p>
-                        <p>Turnos disponíveis: Noturno</p>
-                        <a href="https://active.u-innova.com/ui/sign_up?title=%230007+-+Kensa+de+kiban" target="_blank" class="btn btn-primary py-md-3 px-md-5 me-3">Garanta sua vaga agora!</a>
-                    </div>
-                </div>
               </div>
+              <!-- end job -->
+            </div>
+            <!-- end page 1 Nagano Ken -->
 
-              
-        </div>
-        <!-- end job -->
-
-        </div>
-        <!-- end page 1 Nagano Ken -->
-
-        <!-- page 2 Nagano Ken -->
-        <div id="pageNagano-2" class="page-content">
-
-
-        <!-- job -->
-        <div class="row g-1 mb-3">
-            <div class="row border border-5 pt-10 pb-10">
-                <div class="col-md-2">
-                  <img src="img/cable.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                  <div class="container">
-                    <p>Localização: Kita saku-gun, Nagano-ken</p>
-                    <p>Remuneração: ¥1.150/hora</p>
-                    <p>Fabricaçãode cabos elétricos</p>
-                    <p>Ambiente predominante<strong>feminino</strong></p>
+            <!-- page 2 Nagano Ken -->
+            <div id="pageNagano-2" class="page-content">
+              <!-- job -->
+              <div class="row g-1 mb-3">
+                <div class="row border border-5 pt-10 pb-10">
+                  <div class="col-md-2">
+                    <img src="img/cable.jpg" alt="" class="img-fluid" />
+                  </div>
+                  <div class="col-md-4">
+                    <div class="container">
+                      <p>Localização: Kita saku-gun, Nagano-ken</p>
+                      <p>Remuneração: ¥1.150/hora</p>
+                      <p>Fabricaçãode cabos elétricos</p>
+                      <p>Ambiente predominante<strong>feminino</strong></p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Serviço limpo e organizado</p>
+                      <p>Possuímos apartamento</p>
+                      <p>Auxílio na mudança</p>
+                      <p>Auxílio transporte</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Requisitos: nihongo intermediário 50%</p>
+                      <p>Turnos disponíveis: Noturno</p>
+                      <a
+                        href="https://active.u-innova.com/ui/sign_up?title=%230008+-+fabrica%C3%A7%C3%A3o+de+cabos+eletricos"
+                        target="_blank"
+                        class="btn btn-primary py-md-3 px-md-5 me-3"
+                        >Garanta sua vaga agora!</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Serviço limpo e organizado</p>
-                        <p>Possuímos apartamento</p>
-                        <p>Auxílio na mudança</p>
-                        <p>Auxílio transporte</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Requisitos: nihongo intermediário 50%</p>
-                        <p>Turnos disponíveis: Noturno</p>
-                        <a href="https://active.u-innova.com/ui/sign_up?title=%230008+-+fabrica%C3%A7%C3%A3o+de+cabos+eletricos" target="_blank" class="btn btn-primary py-md-3 px-md-5 me-3">Garanta sua vaga agora!</a>
-                    </div>
-                </div>
               </div>
+              <!-- end job -->
+            </div>
+            <!-- end page 2 Nagano Ken -->
 
-              
-        </div>
-        <!-- end job -->
+            <!-- Menu de paginação Nagano -->
+            <div class="col-12">
+              <nav aria-label="Page navigation">
+                <ul class="pagination pagination-lg justify-content-center m-0">
+                  <li class="page-item active">
+                    <a class="page-link" href="#pageNagano-1">1</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#pageNagano-2">2</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- end menu paginação Nagano -->
+          </div>
+          <!-- end tab 1 Nagano Ken -->
 
-        </div>
-        <!-- end page 2 Nagano Ken -->
-
-        <!-- Menu de paginação Nagano -->
-        <div class="col-12">
-            <nav aria-label="Page navigation">
-              <ul class="pagination pagination-lg justify-content-center m-0">
-                <li class="page-item active"><a class="page-link" href="#pageNagano-1">1</a></li>
-                <li class="page-item active"><a class="page-link" href="#pageNagano-2">2</a></li>
-              </ul>
-            </nav>
-        </div>
-        <!-- end menu paginação Nagano -->
-
-        </div>
-        <!-- end tab 1 Nagano Ken -->
-        
-
-        <!-- tab 2 Gifu ken -->
-        <div id="tab-2" class="tab-pane fade p-0">
-
-        <!-- page 1 Gifu ken -->
-        <div id="pageGifu-1" class="page-content">
-
-        <!-- job -->
-        <div class="row g-1 mb-3">
-            <div class="row border border-5 pt-10 pb-10">
-                <div class="col-md-2">
-                  <img src="img/cosmeticos.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                  <div class="container">
-                    <p>Localização: Nakatsugawa shi, Gifu ken</p>
-                    <p>Remuneração: ¥1.300/hora</p>
-                    <p>Fabricação de embalagens de cosméticos</p>
-                    <p>Ambiente predominante <strong>feminino</strong></p>
-                    <p>Turno fixo</p>
+          <!-- tab 2 Gifu ken -->
+          <div id="tab-2" class="tab-pane fade p-0">
+            <!-- page 1 Gifu ken -->
+            <div id="pageGifu-1" class="page-content">
+              <!-- job -->
+              <div class="row g-1 mb-3">
+                <div class="row border border-5 pt-10 pb-10">
+                  <div class="col-md-2">
+                    <img src="img/cosmeticos.jpg" alt="" class="img-fluid" />
+                  </div>
+                  <div class="col-md-4">
+                    <div class="container">
+                      <p>Localização: Nakatsugawa shi, Gifu ken</p>
+                      <p>Remuneração: ¥1.300/hora</p>
+                      <p>Fabricação de embalagens de cosméticos</p>
+                      <p>Ambiente predominante <strong>feminino</strong></p>
+                      <p>Turno fixo</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Serviço leve, limpo e climatizado</p>
+                      <p>Serviço estável</p>
+                      <p>Possuímos apartamento</p>
+                      <p>Auxílio na mudança</p>
+                      <p>Contratação imediata</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Requisitos: japonês intermediário 50%</p>
+                      <p>Possuir condução própria</p>
+                      <a
+                        href=" https://active.u-innova.com/ui/sign_up?title=%230001+-+F%C3%A1brica+de+Cosm%C3%A9ticos"
+                        target="_blank"
+                        class="btn btn-primary py-md-3 px-md-5 me-3"
+                        >Garanta sua vaga agora!</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Serviço leve, limpo e climatizado</p>
-                        <p>Serviço estável</p>
-                        <p>Possuímos apartamento</p>
-                        <p>Auxílio na mudança</p>
-                        <p>Contratação imediata</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Requisitos: japonês intermediário 50%</p>
-                        <p>Possuir condução própria</p>
-                        <a href=" https://active.u-innova.com/ui/sign_up?title=%230001+-+F%C3%A1brica+de+Cosm%C3%A9ticos" target="_blank" class="btn btn-primary py-md-3 px-md-5 me-3">Garanta sua vaga agora!</a>
-                    </div>
-                </div>
               </div>
+              <!-- end job -->
 
-              
-        </div>
-        <!-- end job -->
-
-        <!-- job -->
-        <div class="row g-1 mb-3">
-            <div class="row border border-5 pt-10 pb-10">
-                <div class="col-md-2">
-                  <img src="img/exaustores.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                  <div class="container">
-                    <p>Localização: Nakatsugawa shi, Gifu ken</p>
-                    <p>Remuneração: ¥1.400/hora</p>
-                    <p>Fabricação de exaustores e jet towel</p>
-                    <p>Ambiente predominante <strong>masculino</strong></p>
+              <!-- job -->
+              <div class="row g-1 mb-3">
+                <div class="row border border-5 pt-10 pb-10">
+                  <div class="col-md-2">
+                    <img src="img/exaustores.jpg" alt="" class="img-fluid" />
+                  </div>
+                  <div class="col-md-4">
+                    <div class="container">
+                      <p>Localização: Nakatsugawa shi, Gifu ken</p>
+                      <p>Remuneração: ¥1.400/hora</p>
+                      <p>Fabricação de exaustores e jet towel</p>
+                      <p>Ambiente predominante <strong>masculino</strong></p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>
+                        Prêmio de admissão <strong>50 mil ienes</strong> *
+                        mediante regras da empresa
+                      </p>
+                      <p>Possuímos apartamento</p>
+                      <p>Auxílio na mudança</p>
+                      <p>auxílio combustível</p>
+                      <p>Contratação imediata</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="container">
+                      <p>Requisitos: japonês intermediário</p>
+                      <p>2 folgas por semana</p>
+                      <a
+                        href="https://active.u-innova.com/ui/sign_up?title=%230003+-+Fabrica%C3%A7%C3%A3o+de+exaustores+industriais+e+Jet+Towel+"
+                        target="_blank"
+                        class="btn btn-primary py-md-3 px-md-5 me-3"
+                        >Garanta sua vaga agora!</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Prêmio de admissão <strong>50 mil ienes</strong> * mediante regras da empresa</p>
-                        <p>Possuímos apartamento</p>
-                        <p>Auxílio na mudança</p>
-                        <p>auxílio combustível</p>
-                        <p>Contratação imediata</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="container">
-                        <p>Requisitos: japonês intermediário</p>
-                        <p>2 folgas por semana</p>
-                        <a href="https://active.u-innova.com/ui/sign_up?title=%230003+-+Fabrica%C3%A7%C3%A3o+de+exaustores+industriais+e+Jet+Towel+" target="_blank" class="btn btn-primary py-md-3 px-md-5 me-3">Garanta sua vaga agora!</a>
-                    </div>
-                </div>
               </div>
+              <!-- end job -->
+            </div>
+            <!-- end page 1 Gifu ken -->
 
-              
+            <!-- page 2 Gifu ken -->
+            <div id="pageGifu-2" class="page-content">
+              <!-- job -->
+
+              <!-- end job -->
+            </div>
+
+            <!-- end page 2 Gifu ken -->
+
+            <!-- Menu de paginação Gifu Gifu ken -->
+            <div class="col-12">
+              <nav aria-label="Page navigation">
+                <ul class="pagination pagination-lg justify-content-center m-0">
+                  <li class="page-item active">
+                    <a class="page-link" href="#pageGifu-1">1</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- end menu paginação Gifu -->
+          </div>
         </div>
-        <!-- end job -->
-
-        </div>
-        <!-- end page 1 Gifu ken -->
-
-        <!-- page 2 Gifu ken -->
-        <div id="pageGifu-2" class="page-content">
-        
-        <!-- job -->
-        
-        <!-- end job -->
-    
-        </div>
-
-        <!-- end page 2 Gifu ken -->
-
-        <!-- Menu de paginação Gifu Gifu ken -->
-        <div class="col-12">
-            <nav aria-label="Page navigation">
-              <ul class="pagination pagination-lg justify-content-center m-0">
-                <li class="page-item active"><a class="page-link" href="#pageGifu-1">1</a></li>
-              </ul>
-            </nav>
-        </div>
-        <!-- end menu paginação Gifu -->
-
-    </div>
-    </div>
-    
-    </div>
+      </div>
     </div>
     <!-- menu job End -->
 
-
-    
-
-   <!-- Footer Start -->
-   <div class="container-fluid bg-dark text-secondary px-5 mt-5">
-    <div class="row gx-5">
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-secondary px-5 mt-5">
+      <div class="row gx-5">
         <div class="col-lg-8 col-md-6">
-            <div class="row gx-5">
-                <div class="col-lg-4 col-md-12 pt-5 mb-5">
-                    <h4 class="text-uppercase text-light mb-4">Entre em contato</h4>
-                    <div class="d-flex mb-2">
-                        <i class="bi bi-geo-alt text-primary me-2"></i>
-                        <p class="mb-0">Fumiiri 2-9-15 Ichikawa Bldg 2F, Ueda-shi, Nagano, Japan</p>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <i class="bi bi-envelope-open text-primary me-2"></i>
-                        <p class="mb-0">sugio@active-ing.jp</p>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <i class="bi bi-telephone text-primary me-2"></i>
-                        <p class="mb-0">+81 90-1604-8273</p>
-                    </div>
-                    <div class="d-flex mt-4">
-                        <a class="btn btn-primary btn-square rounded-circle me-2" href="https://www.facebook.com/active.inc.japan" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-primary btn-square rounded-circle" href="https://www.instagram.com/activenagano/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                    <h4 class="text-uppercase text-light mb-4">Links rápidos</h4>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-secondary mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-secondary mb-2" href="job.html"><i class="bi bi-arrow-right text-primary me-2"></i>Vagas disponíveis</a>
-                        <a class="text-secondary" href="https://active.u-innova.com/ui/sign_up" target="_blank"><i class="bi bi-arrow-right text-primary me-2"></i>Ficha online</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                    <h4 class="text-uppercase text-light mb-4">Popular Links</h4>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-secondary mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Sobre nós</a>
-                        <a class="text-secondary mb-2" href="index.html#office"><i class="bi bi-arrow-right text-primary me-2"></i>Escritórios</a>
-                        <a class="text-secondary mb-2" href="companyprofile.html"><i class="bi bi-arrow-right text-primary me-2"></i>Perfil da companhia</a>
-                        <a class="text-secondary mb-2" href="privacy.html"><i class="bi bi-arrow-right text-primary me-2"></i>Política de privacidade</a>
-                        <a class="text-secondary mb-2" href="terms.html"><i class="bi bi-arrow-right text-primary me-2"></i>Termos & Condições</a>
-                        <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Entre em contato</a>
-                    </div>
-                </div>
+          <div class="row gx-5">
+            <div class="col-lg-4 col-md-12 pt-5 mb-5">
+              <h4 class="text-uppercase text-light mb-4">Entre em contato</h4>
+              <div class="d-flex mb-2">
+                <i class="bi bi-geo-alt text-primary me-2"></i>
+                <p class="mb-0">
+                  Fumiiri 2-9-15 Ichikawa Bldg 2F, Ueda-shi, Nagano, Japan
+                </p>
+              </div>
+              <div class="d-flex mb-2">
+                <i class="bi bi-envelope-open text-primary me-2"></i>
+                <p class="mb-0">sugio@active-ing.jp</p>
+              </div>
+              <div class="d-flex mb-2">
+                <i class="bi bi-telephone text-primary me-2"></i>
+                <p class="mb-0">+81 90-1604-8273</p>
+              </div>
+              <div class="d-flex mt-4">
+                <a
+                  class="btn btn-primary btn-square rounded-circle me-2"
+                  href="https://www.facebook.com/active.inc.japan"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-square rounded-circle"
+                  href="https://www.instagram.com/activenagano/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
             </div>
+            <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+              <h4 class="text-uppercase text-light mb-4">Links rápidos</h4>
+              <div class="d-flex flex-column justify-content-start">
+                <a class="text-secondary mb-2" href="index.html"
+                  ><i class="bi bi-arrow-right text-primary me-2"></i>Home</a
+                >
+                <a class="text-secondary mb-2" href="job.html"
+                  ><i class="bi bi-arrow-right text-primary me-2"></i>Vagas
+                  disponíveis</a
+                >
+                <a
+                  class="text-secondary"
+                  href="https://active.u-innova.com/ui/sign_up"
+                  target="_blank"
+                  ><i class="bi bi-arrow-right text-primary me-2"></i>Ficha
+                  online</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+              <h4 class="text-uppercase text-light mb-4">Popular Links</h4>
+              <div class="d-flex flex-column justify-content-start">
+                <a class="text-secondary mb-2" href="index.html"
+                  ><i class="bi bi-arrow-right text-primary me-2"></i>Home</a
+                >
+                <a class="text-secondary mb-2" href="about.html"
+                  ><i class="bi bi-arrow-right text-primary me-2"></i>Sobre
+                  nós</a
+                >
+                <a class="text-secondary mb-2" href="index.html#office"
+                  ><i class="bi bi-arrow-right text-primary me-2"></i
+                  >Escritórios</a
+                >
+                <a class="text-secondary mb-2" href="companyprofile.html"
+                  ><i class="bi bi-arrow-right text-primary me-2"></i>Perfil da
+                  companhia</a
+                >
+                <a class="text-secondary mb-2" href="privacy.html"
+                  ><i class="bi bi-arrow-right text-primary me-2"></i>Política
+                  de privacidade</a
+                >
+                <a class="text-secondary mb-2" href="terms.html"
+                  ><i class="bi bi-arrow-right text-primary me-2"></i>Termos &
+                  Condições</a
+                >
+                <a class="text-secondary" href="contact.html"
+                  ><i class="bi bi-arrow-right text-primary me-2"></i>Entre em
+                  contato</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-lg-4 col-md-6">
-            <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-5">
-                <h4 class="text-uppercase text-white mb-4">Ficha online</h4>
-                <p class="text-light">Preencha sua ficha online em menos de 3 minutos!</p>
-                <a href="https://active.u-innova.com/ui/sign_up" target="_blank" class="btn btn-bottom py-md-3 px-md-5 d-none d-lg-block">Ficha Online</a>
-            </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-5"
+          >
+            <h4 class="text-uppercase text-white mb-4">Ficha online</h4>
+            <p class="text-light">
+              Preencha sua ficha online em menos de 3 minutos!
+            </p>
+            <a
+              href="https://active.u-innova.com/ui/sign_up"
+              target="_blank"
+              class="btn btn-bottom py-md-3 px-md-5 d-none d-lg-block"
+              >Ficha Online</a
+            >
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="container-fluid py-4 py-lg-0 px-5" style="background: #b3b3b3;">
-    <div class="row gx-5">
-            <div class="py-lg-4 text-center">
-                <p class="text-secondary mb-0">&copy; <a class="text-light fw-bold" href="#">Active corp.</a> All Rights Reserved.</p>
-            </div>
+    <div class="container-fluid py-4 py-lg-0 px-5" style="background: #b3b3b3">
+      <div class="row gx-5">
+        <div class="py-lg-4 text-center">
+          <p class="text-secondary mb-0">
+            &copy; <a class="text-light fw-bold" href="#">Active corp.</a> All
+            Rights Reserved.
+          </p>
+        </div>
+      </div>
     </div>
-</div>
-<!-- Footer End -->
-
+    <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -560,6 +749,5 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
